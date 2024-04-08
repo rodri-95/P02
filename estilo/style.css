@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Estilos para a navegação dentro do cabeçalho */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+div#bloco1 {    
+    background-image: url(../img/5.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    position: relative;
+    overflow: hidden; 
+    display: flex; /* Usa flexbox para centralizar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;   
+    background-color: #333;
+}
+
+div#bloco2 {
+    background-image: url(../img/3.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    position: relative;
+    overflow: hidden; 
+    background-color: #333;
+}
+
+div#bloco3 {
+    background-image: url(../img/2.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;  
+    background-color: #333;
+}
+
+div#bloco4 {
+    background-image: url(../img/1.jpg); 
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    position: relative;
+    overflow: hidden; 
+    background-color: #333; 
+}
+
+div#bloco5 {
+    background-image: url(../img/4.jpg); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+div#bloco1 > h1 {
+    background-color: #ffffff7a;
+    box-shadow: 2px 2px 1px rgba(235, 232, 232, 0.753);
+    padding: 15px 120px;
+    border-radius: 5px;
+}
+
+.fbranca {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    width: 1200px;
+    margin: auto;
+}
+
+.fbranca > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fbranca > p {
+    font-size: 17px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    columns: 2;
+}
+
+footer > p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
