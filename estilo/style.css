@@ -39,7 +39,7 @@ nav ul li a:hover {
 div#bloco1 {    
     background-image: url(../img/5.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom top;
     background-repeat: no-repeat;
     background-size: contain;
     height: 500px;
@@ -52,7 +52,7 @@ div#bloco1 {
 }
 
 div#bloco2 {
-    background-image: url(../img/3.jpg);
+    background-image: url(../img/4.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@ div#bloco2 {
 }
 
 div#bloco3 {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/4.jpg);
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ div#bloco3 {
 }
 
 div#bloco4 {
-    background-image: url(../img/1.jpg); 
+    background-image: url(../img/4.jpg); 
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -107,9 +107,9 @@ div#bloco1 > h1 {
 
 .fbranca {
     text-align: center;
-    padding: 50px;
+    padding: 120px 50px;
     background-color: #ffffff;
-    width: 1200px;
+    width: 800px;
     margin: auto;
 }
 
