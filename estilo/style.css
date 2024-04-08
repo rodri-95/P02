@@ -1,136 +1,105 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Raleway", sans-serif;
+    --fonte3: "Indie Flower", cursive;
+}
+
 * {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 
-/* Estilos para o cabeçalho */
+html, body {
+    min-height: 100vh;
+    background-color: rgb(226, 226, 224);    
+}
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: black;
+    color: white;
     text-align: center;
-    
 }
 
-/* Estilos para a navegação dentro do cabeçalho */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4vh;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+header > p {
+    padding-bottom: 50px;
 }
 
-nav ul li a {
-    color: #fff;
+header a, footer a { 
+    color: white;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+header a:hover, footer a:hover {
+    color: aquamarine;
     text-decoration: underline;
 }
 
-div#bloco1 {    
-    background-image: url(../img/5.jpg);
-    background-attachment: fixed;
-    background-position: bottom top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
-    position: relative;
-    overflow: hidden; 
-    display: flex; /* Usa flexbox para centralizar verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;   
-    background-color: #333;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
 }
 
-div#bloco2 {
+section > p {
+    padding-bottom: 2em;
+    font-size: 3vh;
+    font-family: var(--fonte3);
+}
+
+section.normal {    
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(54, 54, 54);
+    color: white;  
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.623);
+    background-size: cover;  
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01 {
     background-image: url(../img/4.jpg);
-    background-attachment: fixed;
     background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
-    position: relative;
-    overflow: hidden; 
-    background-color: #333;
 }
 
-div#bloco3 {
-    background-image: url(../img/4.jpg);
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;  
-    background-color: #333;
-}
-
-div#bloco4 {
-    background-image: url(../img/4.jpg); 
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
-    position: relative;
-    overflow: hidden; 
-    background-color: #333; 
-}
-
-div#bloco5 {
-    background-image: url(../img/4.jpg); 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-    background-color: #333;
-}
-
-
-div#bloco1 > h1 {
-    background-color: #ffffff7a;
-    box-shadow: 2px 2px 1px rgba(235, 232, 232, 0.753);
-    padding: 15px 120px;
-    border-radius: 5px;
-}
-
-.fbranca {
-    text-align: center;
-    padding: 120px 50px;
-    background-color: #ffffff;
-    width: 800px;
-    margin: auto;
-}
-
-.fbranca > h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.fbranca > p {
-    font-size: 17px;
-    text-align: center;
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right bottom;
 }
 
 footer {
-    background-color: #333;
-    padding: 50px;
-    columns: 2;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
 }
 
 footer > p {
     color: white;
-    font-size: 20px;
-    text-align: center;
 }
