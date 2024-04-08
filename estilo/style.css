@@ -26,6 +26,11 @@ header {
     text-align: center;
 }
 
+nav > ul > li {
+    display: inline;
+    margin: 20px;
+}
+
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
@@ -33,9 +38,7 @@ header > h1 {
     font-size: 4vh;
 }
 
-header > p {
-    padding-bottom: 50px;
-}
+
 
 header a, footer a { 
     color: white;
@@ -90,16 +93,19 @@ section#img01 {
 }
 
 section#img02 {
-    background-image: url('../imagens/background002.jpg');
+    background-image: url(../img/a1.jpg);
     background-position: right bottom;
 }
 
 footer {
     background-color: black;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
+    
 }
 
 footer > p {
     color: white;
+    text-align: center;
+    columns: 2;
 }
