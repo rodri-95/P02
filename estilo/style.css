@@ -24,6 +24,7 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 nav > ul > li {
@@ -36,6 +37,7 @@ header > h1 {
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 4vh;
+    margin-bottom: 10px;
 }
 
 
@@ -107,5 +109,4 @@ footer {
 footer > p {
     color: white;
     text-align: center;
-    columns: 2;
 }
